@@ -7,7 +7,9 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="ress.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="top.css">
 <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -16,15 +18,41 @@
 </head>
 <body>
 
-社内サービス<br>
+<nav>
+	<h2 class="logo">★KINTA</h2>
+</nav>
 
 <form action="login.php" method="post">
-	ID
-	<input type="text" name="ID" required><br>
-	Password
-	<input type="password" name="password" required><br>
-	<input type="submit" value="ログイン">
+	<div class="form">
+		<div class="title">
+			ログイン
+		</div>
+		<div class="contents">
+			<div class="center">
+				<div class="item_center">
+					<i class="far fa-user-circle icon"></i><input type="text" name="ID" placeholder="ID" required autocomplete="off"><br>
+				</div>
+			</div>
+			<div style="height: 20px">
+				<!-- スペーサー -->
+			</div>
+			<div class="center">
+				<div class="item_center">
+					<i class="fas fa-key icon"></i><input type="password" name="password" placeholder="Password" required autocomplete="off"><br>
+				</div>
+			</div>
+			<div style="height: 50px">
+				<!-- スペーサー -->
+			</div>
+			<div class="center">
+				<input type="submit" value="ログイン">
+			</div>
+		</div>
+	</div>
 </form>
+<footer>
+	(C)2018 oliver.app.pg
+</footer>
 <!-- SCRIPTS -->
 </body>
 </html>
