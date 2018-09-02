@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ress.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="kintai.css">
+</head>
+<body>
+  <div class="contens">
+		勤怠<br>
+    <div class="kintai_main">
+      <div class="addfield">
+        <input type="number" class="time" required>
+        <select class="code">
+        <option value="0">選択</option>
+        <option value="1">WB</option>
+        <option value="-1">その他</option>
+        </select>
+        <input type="text" class="other" placeholder="備考">
+      </div>
+      <input type="button" class="add" value="追加">
+      <!-- javascriptで -->
+      <script>
+        var array = [];
+
+      </script>
+      <form method="get" action="updata_kintai.php" id="update_kintai">
+        <input type="submit" value="更新">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

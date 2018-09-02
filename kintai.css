@@ -1,0 +1,49 @@
+div.kintai_main {
+  text-align: center;
+  width: 100%;
+}
+div.addfield {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+}
+input.time, input.other{
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border-right: solid 1px rgb(200, 200, 200);
+  height: 30px;
+  padding-left: 10px;
+}
+int:last-child {
+  border: none;
+}
+input::placeholder{
+  padding-left:0px;
+  font-style: italic;
+}
+input.time {
+  width: 60px;
+}
+input.other {
+  width: 200px;
+}
+select.code {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border-right: solid 1px rgb(200, 200, 200);
+  border-radius: 0px;
+  text-align: center;
+  padding: 0px;
+  height: 30px;
+}
+input.add {
+  display: inline-block;
+  background-color: rgba(0, 255, 232, 0);
+  border: solid 1px rgb(200, 200, 200);
+  height: 30px;
+  width: 50px;
+  transition: .4s;
+}
+input.add:hover {
+	background-color: rgba(0, 194, 255, 0.6);
+  border: solid 1px rgb(0, 156, 255);
+}
