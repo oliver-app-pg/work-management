@@ -2,48 +2,97 @@ div.kintai_main {
   text-align: center;
   width: 100%;
 }
-div.addfield {
-  display: inline-block;
-  background-color: rgb(255, 255, 255);
+div.month {
+	display:inline-block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1px 0px 3px rgb(163, 163, 163);
+  background-color: rgba(255, 255, 255, 0.6);
+	color: rgb(167, 167, 167)；
 }
-input.time, input.other{
-  display: inline-block;
-  background-color: rgb(255, 255, 255);
-  border-right: solid 1px rgb(200, 200, 200);
-  height: 30px;
-  padding-left: 10px;
+span.month {
+  font-size: 40px;
+  padding: 0 30px 0 30px;
 }
-int:last-child {
-  border: none;
+input.prevMonth {
+  display:inline-block;
+  padding: 0 10px 0 10px;
 }
-input::placeholder{
-  padding-left:0px;
-  font-style: italic;
+input.nextMonth {
+  display:inline-block;
+  padding: 0 10px 0 10px;
 }
-input.time {
-  width: 60px;
+div.day {
+  cursor: move;
+  display:inline-block;
+  position: absolute;
+  left: 0px;
+  font-size: 16px;
+  white-space: nowrap;
+  box-shadow: 0px 0px 3px rgb(163, 163, 163);
 }
-input.other {
-  width: 200px;
-}
-select.code {
-  display: inline-block;
-  background-color: rgb(255, 255, 255);
-  border-right: solid 1px rgb(200, 200, 200);
-  border-radius: 0px;
+span.day0, span.day1, span.day2, span.day3, span.day4 {
+  display:inline-block;
+  color: rgb(94, 94, 94);
   text-align: center;
-  padding: 0px;
-  height: 30px;
-}
-input.add {
-  display: inline-block;
-  background-color: rgba(0, 255, 232, 0);
-  border: solid 1px rgb(200, 200, 200);
-  height: 30px;
   width: 50px;
-  transition: .4s;
+  border-right: 1px solid rgb(125, 125, 125);
+  padding-right: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
-input.add:hover {
-	background-color: rgba(0, 194, 255, 0.6);
-  border: solid 1px rgb(0, 156, 255);
+span.day5 {
+  display:inline-block;
+  color: rgb(0, 148, 255);
+  text-align: center;
+  width: 50px;
+  border-right: 1px solid rgb(125, 125, 125);
+  padding-right: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+span.day6 {
+  display:inline-block;
+  color: rgb(199, 0, 125);
+  text-align: center;
+  width: 50px;
+  border-right: 1px solid rgb(125, 125, 125);
+  padding-right: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+div.day span:last-child {
+  border-right: none;
+}
+
+div.dayreport_frame {
+  display: block;
+  position:absolute;
+  overflow: auto;
+  height: 80%;
+  width: 100%;
+  top: 145px;
+  left: 0px;
+}
+
+div.dayreport {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+div.dayreportContents {
+  border-bottom: 1px solid rgb(125, 125, 125);
+}
+div.dayreport div:last-child {
+  border-bottom: none;
+}
+
+div.time {
+  width: 100px;
+  border-right: 1px solid rgb(125, 125, 125);
+  text-align: right;
+  padding-right: 10px;
+}
+span.time {
+  font-size: 40px;
+}
+
+div.at9 {
 }
