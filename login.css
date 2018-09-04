@@ -1,0 +1,85 @@
+header, nav, article, aside, section, footer {
+	display:block; /*←新要素はデフォルトではinline要素なのでこの指定が必要。*/
+}
+html{
+	height: 100%;
+}
+body{
+	background-image: linear-gradient(0deg, #20069c, #72c2c8);
+	height: 100%;
+}
+a {
+	display:block;
+	position: relative;
+	text-decoration: none;
+	padding: 5px 5px 5px 15px;
+	border-bottom: solid 3px rgba(255, 255, 255, 0.8);
+
+	overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:before {
+	content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -95%;
+  background-color: rgba(0, 113, 168, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:link, a:visited {
+	text-decoration:none;
+	color: rgba(255, 255, 255, 0.8);
+}
+a:hover {
+	color: rgb(120, 120, 120);
+}
+a:hover::before {
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.contens {
+	display: block;
+	float: left;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 4px;
+	padding: 5px;
+}
+iframe.main {
+	display: inline-block;
+	padding: 5px;
+	height: 91%;
+	width: calc(100% - 200px);
+	border: none;
+}
+
+div.sidebar {
+	display: inline-block;
+	float: left;
+	width: 200px;
+	height: 91%;
+	padding: 5px 10px 0px 5px;
+}
+div.menu.button:first-child {
+}
+div.menu.button {
+	padding: 8px 0px 0px 0px;
+	font-size: 15px;
+}
+
+div.main {
+	display: inline-block;
+	padding: 5px;
+	height: 91%;
+	width: calc(100% - 200px);
+}
